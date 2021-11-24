@@ -42,7 +42,7 @@ hostname: any;
 pageviews: any;
 gradient: boolean;
 recipelink_pancakes: any;
-recipelink_burritos: any;
+recipelink_tacos: any;
 recipelink_steak: any;
 recipelink_lasagne: any;
 view: any[] = [700, 200];
@@ -81,7 +81,7 @@ getrecipe(): void {
                 .map((res: Response) => res.json())
                 .subscribe(res => {console.log("recipe link " + res, res.recipelink_pancakes); 
                 this.recipelink_pancakes = res.recipelink_pancakes,
-                this.recipelink_burritos = res.recipelink_burritos,
+                this.recipelink_tacos = res.recipelink_tacos,
                 this.recipelink_steak = res.recipelink_steak,
                 this.recipelink_lasagne = res.recipelink_lasagne
                 })   

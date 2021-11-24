@@ -7,7 +7,7 @@ aws appmesh delete-gateway-route --gateway-route-name yelbui-gatewayroute --virt
 aws appmesh delete-virtual-gateway --virtual-gateway yelb-gateway --mesh-name yelb
 
 
-# Delete Virtual Services (AppServer, UI, DB, Redis and RecipePuppy)
+# Delete Virtual Services (AppServer, UI, DB, Redis and TheMealDB)
 
 aws appmesh delete-virtual-service --mesh-name yelb --virtual-service-name yelb-appserver
 
@@ -15,12 +15,12 @@ aws appmesh delete-virtual-service --mesh-name yelb --virtual-service-name redis
 
 aws appmesh delete-virtual-service --mesh-name yelb --virtual-service-name yelb-db
 
-aws appmesh delete-virtual-service --mesh-name yelb --virtual-service-name www.recipepuppy.com
+aws appmesh delete-virtual-service --mesh-name yelb --virtual-service-name www.themealdb.com
 
 aws appmesh delete-virtual-service --mesh-name yelb --virtual-service-name yelb-ui
 
 
-# Delete Virtual Nodes (AppServer, UI, DB, Redis and RecipePuppy)
+# Delete Virtual Nodes (AppServer, UI, DB, Redis and TheMealDB)
 
 aws appmesh delete-virtual-node --mesh-name yelb --virtual-node-name yelb-redis-server
 

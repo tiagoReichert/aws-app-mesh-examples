@@ -11,7 +11,7 @@
         ],
         "serviceDiscovery": {
                 "dns": {
-                    "hostname": "www.recipepuppy.com"
+                    "hostname": "www.themealdb.com"
                 }
         }
     },

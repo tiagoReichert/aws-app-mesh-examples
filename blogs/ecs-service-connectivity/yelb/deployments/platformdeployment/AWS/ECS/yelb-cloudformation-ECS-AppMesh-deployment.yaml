@@ -143,7 +143,7 @@ Resources:
                     - Name: SEARCH_DOMAIN
                       Value: !Ref 'Domain'
                     - Name: RECIPE_API_ENDPOINT
-                      Value: 'http://www.recipepuppy.com/api/?q='
+                      Value: 'https://www.themealdb.com/api/json/v1/1/search.php?s='
                     - Name: YELB_DB_SERVER_ENDPOINT
                       Value: !GetAtt YelbDb.Endpoint.Address
                     - Name: YELB_REDIS_SERVER_ENDPOINT
@@ -292,7 +292,7 @@ Resources:
             DatabaseName: 'yelbdatabase'
             DBClusterIdentifier: yelb-cluster
             Engine: aurora-postgresql
-            EngineVersion: '10.7'
+            EngineVersion: '10.18'
             Port: !Ref 'DBPort'
             DBClusterParameterGroupName: default.aurora-postgresql10
             EnableCloudwatchLogsExports:

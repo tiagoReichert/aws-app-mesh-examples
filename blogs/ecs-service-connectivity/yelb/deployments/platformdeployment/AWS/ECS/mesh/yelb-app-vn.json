@@ -14,7 +14,7 @@
             },
             {
                 "virtualService": {
-                    "virtualServiceName": "www.recipepuppy.com"
+                    "virtualServiceName": "www.themealdb.com"
                 }
             }
         ],
